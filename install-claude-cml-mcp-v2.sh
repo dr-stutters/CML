@@ -15,10 +15,10 @@ set -euo pipefail
 # Configuration (override via environment variables before running)
 # ---------------------------------------------------------------------------
 MCP_NAME="${MCP_NAME:-Cisco_Modeling_Labs_CML}"
-CML_URL="${CML_URL:-https://198.18.128.10/mcp}"
+CML_URL="${CML_URL:-https://<CML_IP_ADDRESS>/mcp}"
 # Basic auth header value, e.g. "Basic <base64(user:pass)>".
-# Default below = admin:YOURPASSWORD
-CML_AUTH_HEADER="${CML_AUTH_HEADER:-Basic ***REMOVED***}"
+# Generate with: printf 'admin:YOURPASSWORD' | base64
+CML_AUTH_HEADER="${CML_AUTH_HEADER:-Basic <REMOVED-ADD-PASSWORD-IN-BASE64>}"
 # Project scope to install under (the key inside .claude.json -> projects).
 PROJECT_DIR="${PROJECT_DIR:-$HOME}"
 CLAUDE_JSON="${CLAUDE_JSON:-$HOME/.claude.json}"
