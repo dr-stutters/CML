@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.env
+*.log
+*.qcow2
+*.tgz
+.DS_Store

@@ -1,0 +1,25 @@
+{
+  "name": "cml-images-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MCP server for managing Cisco Modeling Labs (CML 2.10) image & node definitions: upload disk images and create/delete image and node definitions.",
+  "type": "module",
+  "bin": {
+    "cml-images-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "undici": "^6.19.8",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
