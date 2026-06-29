@@ -14,7 +14,7 @@ set -euo pipefail
 MCP_NAME="${MCP_NAME:-Cisco_Modeling_Labs_CML}"
 CML_URL="${CML_URL:-https://<CML_IP_ADDRESS>/mcp}"
 # Basic auth header value, e.g. "Basic <base64(user:pass)>".
-# Default below = admin:YOURPASSWORD
+# Generate with: printf 'admin:YOURPASSWORD' | base64
 CML_AUTH_HEADER="${CML_AUTH_HEADER:-Basic <REMOVED-ADD-PASSWORD-IN-BASE64>}"
 # Project scope to install under (the key inside .claude.json -> projects).
 PROJECT_DIR="${PROJECT_DIR:-$HOME}"
